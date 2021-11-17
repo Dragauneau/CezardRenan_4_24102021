@@ -6,7 +6,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 a,
 button {
     transition: all .3s ease-in-out;
@@ -38,6 +37,11 @@ a:hover {
     position: relative;
 }
 
+.nav_button
+{
+    padding: 5px;
+    
+}
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
@@ -366,6 +370,7 @@ a:hover {
 
 @media (min-width: 768px) {
     .site-navigation {
+        display: flex;
         position: absolute;
         top: 50%;
         right: 20px;
@@ -885,10 +890,35 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .site-navigation {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 2%; 
+        -webkit-transform: translateY(-50%);
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
     }
+    .dropdown {
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        top: 144%;
+        right: -4px;    
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 2px;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     h1,
     h2,
     h3,
@@ -897,8 +927,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -911,12 +941,6 @@ h4 {
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
-    }
-    .site-navigation {
-        position: inherit;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
     }
     .nav > li {
         margin-top: 0;
