@@ -6,6 +6,15 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.nav_button
+{
+    padding: 5px;
+    
+}
+.black_color
+{
+    color: black;
+}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -35,12 +44,6 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-}
-
-.nav_button
-{
-    padding: 5px;
-    
 }
 .bloc .container {
     padding-left: 0;
@@ -129,6 +132,7 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
+.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -681,6 +685,31 @@ a {
 p {
     font-size: 20px;
 }
+.text-img
+{
+    font-size: 1.6em;
+}
+
+#citation-text
+{
+    font-size: 1.3em;
+    font-style: italic;
+    color: #575757!important;
+}
+
+#citation-auteur
+{
+    font-size: 1em;
+    font-style: normal;
+    color: #575757!important;
+}
+
+.h2-style
+{
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -699,10 +728,6 @@ p {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
-}
-.black_color
-{
-    color: black;
 }
 .social {
     max-width: 400px;
@@ -745,7 +770,7 @@ h4 {
 }
 
 .portfolio-thumb {
-    margin-bottom: 24px;
+    margin: auto;
 }
 
 .portfolio-row {
@@ -941,6 +966,12 @@ h4 {
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
+    }
+    .site-navigation {
+        position: inherit;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
     }
     .nav > li {
         margin-top: 0;
